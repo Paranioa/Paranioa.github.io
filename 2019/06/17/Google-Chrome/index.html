@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="bug;,">
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Aron｜Blog">
-<meta property="og:url" content="http://yoursite.com/tags/Win/index.html">
+<meta name="description" content="目录中生成 debug.log 文件，大概内容如下 123[0810/181603.876:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/182501.651:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/192930.630:ERRO">
+<meta name="keywords" content="bug;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Google_Chrome">
+<meta property="og:url" content="http://yoursite.com/2019/06/17/Google-Chrome/index.html">
 <meta property="og:site_name" content="Aron｜Blog">
+<meta property="og:description" content="目录中生成 debug.log 文件，大概内容如下 123[0810/181603.876:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/182501.651:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/192930.630:ERRO">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-06-16T18:47:59.597Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Aron｜Blog">
+<meta name="twitter:title" content="Google_Chrome">
+<meta name="twitter:description" content="目录中生成 debug.log 文件，大概内容如下 123[0810/181603.876:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/182501.651:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/192930.630:ERRO">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/Win/">
+  <link rel="canonical" href="http://yoursite.com/2019/06/17/Google-Chrome/">
 
 
 
 
 
-  <title>标签: Win | Aron｜Blog</title>
+  <title>Google_Chrome | Aron｜Blog</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-right ">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,52 +249,151 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Win<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/17/Google-Chrome/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aron">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Aron｜Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/05/07/Software/" itemprop="url">
-              
-                <span itemprop="name">Software</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Google_Chrome</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-07T01:04:52+08:00" content="2019-05-07">
-          05-07
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-17T02:26:35+08:00">
+                2019-06-17
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>目录中生成 <code>debug.log</code> 文件，大概内容如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[0810/181603.876:ERROR:crash_report_database_win.cc(427)] unexpected header</span><br><span class="line">[0810/182501.651:ERROR:crash_report_database_win.cc(427)] unexpected header</span><br><span class="line">[0810/192930.630:ERROR:crash_report_database_win.cc(427)] unexpected header</span><br></pre></td></tr></table></figure>
+<p>解决方案：</p>
+<p>删除 <code>%UserProFile%\AppData\Local\Google\Chrome\User Data\Crashpad</code> 目录</p>
+<p>参考：<a href="https://superuser.com/questions/1241154/debug-log-file-is-being-created-in-a-few-windows-folders-possibly-from-chrome" target="_blank" rel="noopener">https://superuser.com/questions/1241154/debug-log-file-is-being-created-in-a-few-windows-folders-possibly-from-chrome</a></p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/bug/" rel="tag"># bug;</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/07/Software/" rel="next" title="Software">
+                <i class="fa fa-chevron-left"></i> Software
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -297,6 +401,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -545,6 +653,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
