@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="目录中生成 debug.log 文件，大概内容如下 123[0810/181603.876:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/182501.651:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/192930.630:ERRO">
+<meta name="description" content="目录胡乱生成 debug.log 文件，大概内容如下 123[0810/181603.876:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/182501.651:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/192930.630:ERR">
 <meta name="keywords" content="bug">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Google_Chrome">
 <meta property="og:url" content="http://yoursite.com/2019/06/17/Google-Chrome/index.html">
 <meta property="og:site_name" content="Aron｜Blog">
-<meta property="og:description" content="目录中生成 debug.log 文件，大概内容如下 123[0810/181603.876:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/182501.651:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/192930.630:ERRO">
+<meta property="og:description" content="目录胡乱生成 debug.log 文件，大概内容如下 123[0810/181603.876:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/182501.651:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/192930.630:ERR">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-16T19:26:10.923Z">
+<meta property="og:updated_time" content="2019-06-16T20:30:27.161Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Google_Chrome">
-<meta name="twitter:description" content="目录中生成 debug.log 文件，大概内容如下 123[0810/181603.876:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/182501.651:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/192930.630:ERRO">
+<meta name="twitter:description" content="目录胡乱生成 debug.log 文件，大概内容如下 123[0810/181603.876:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/182501.651:ERROR:crash_report_database_win.cc(427)] unexpected header[0810/192930.630:ERR">
 
 
 
@@ -330,17 +330,17 @@
       
 
       
-        <p>目录中生成 <code>debug.log</code> 文件，大概内容如下</p>
+        <p>目录胡乱生成 <code>debug.log</code> 文件，大概内容如下</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[0810/181603.876:ERROR:crash_report_database_win.cc(427)] unexpected header</span><br><span class="line">[0810/182501.651:ERROR:crash_report_database_win.cc(427)] unexpected header</span><br><span class="line">[0810/192930.630:ERROR:crash_report_database_win.cc(427)] unexpected header</span><br></pre></td></tr></table></figure>
 <p>解决方案：</p>
 <ol>
-<li><p>关闭 Chrome</p>
-</li>
-<li><p>删除 <code>%UserProFile%\AppData\Local\Google\Chrome\User Data\Crashpad</code> 目录</p>
-</li>
+<li>关闭 Chrome</li>
+<li>删除 <code>%UserProFile%\AppData\Local\Google\Chrome\User Data\Crashpad</code> 目录</li>
 <li>启动 Chrome</li>
 </ol>
-<p>参考：<a href="https://superuser.com/questions/1241154/debug-log-file-is-being-created-in-a-few-windows-folders-possibly-from-chrome" target="_blank" rel="noopener">https://superuser.com/questions/1241154/debug-log-file-is-being-created-in-a-few-windows-folders-possibly-from-chrome</a></p>
+<h3 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h3><ul>
+<li><a href="https://superuser.com/questions/1241154/debug-log-file-is-being-created-in-a-few-windows-folders-possibly-from-chrome" target="_blank" rel="noopener">https://superuser.com/questions/1241154/debug-log-file-is-being-created-in-a-few-windows-folders-possibly-from-chrome</a></li>
+</ul>
 
       
     </div>
@@ -431,8 +431,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -519,6 +528,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#参考："><span class="nav-number">1.</span> <span class="nav-text">参考：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
